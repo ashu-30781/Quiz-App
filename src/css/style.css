@@ -44,9 +44,12 @@ body .app .quiz #answer-buttons .btn {
   cursor: pointer;
   transition: all 0.3s;
 }
-body .app .quiz #answer-buttons .btn:hover {
+body .app .quiz #answer-buttons .btn:hover:not([disabled]) {
   background: #222;
   color: #fff;
+}
+body .app .quiz #answer-buttons .btn:disabled {
+  cursor: no-drop;
 }
 body .app #next-btn {
   background: #001e4d;
@@ -59,6 +62,12 @@ body .app #next-btn {
   border-radius: 4px;
   cursor: pointer;
   display: none;
+}
+body .correct {
+  background: #9aeabc;
+}
+body .incorrect {
+  background: #ff9393;
 }
 
 /*# sourceMappingURL=style.css.map */
